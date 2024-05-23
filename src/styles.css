@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Nexa Light';
-  src: url('/src/assets/nexa/Nexa Light.otf') format('opentype'); /* Ruta a la fuente en tu servidor */
+  src: url('assets/nexa/Nexa Light.otf') format('opentype'); /* Ruta a la fuente en tu servidor */
 }
 
 body {

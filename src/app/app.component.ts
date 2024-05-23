@@ -1,11 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {timer} from "rxjs";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -27,7 +28,7 @@ export class AppComponent implements OnInit {
 
     this.clock = this.source.subscribe(t => {
       this.now = new Date();
-      this.end = new Date('06/26/2024 08:00');
+      this.end = new Date('06/26/2024 10:00');
       this.showDate();
     });
 
